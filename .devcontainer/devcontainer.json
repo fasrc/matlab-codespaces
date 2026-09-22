@@ -11,6 +11,9 @@
   */
   "name": "Built using MathWorks Docker Hub Image",
   "image": "docker.io/mathworks/matlab:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:4": {}
+  },
   "onCreateCommand": {
     "install-dependencies": "sudo apt-get update && sudo apt-get install --no-install-recommends -y git"
   },
